@@ -20,16 +20,18 @@ pas=input('Insert password (DO NOT USE SPACE): ')
 a=5
 b=0
 while pas != p :
+    b=b+1
     a=a-1
     if a > 0 and a <= 5 :
         print('ACCESS DENIED')
         print('Password length:',len(pas),'character(s)')
-        print('Attempt(s)     :',b+1)
+        print('Attempt(s)     :',b)
         print('YOU HAVE',a,'TIME(S) TO INPUT PASSWORD')
         print()
         pas=input('Insert password: ')
     else :
         print('You have reached the limit attempts')
+        print('Total attempts:',a+5)
         break
 else :
-    print('ACCESS GRANTED, Total attempt(s) =',b)
+    print('ACCESS GRANTED, Total attempt(s) =',b+1)
