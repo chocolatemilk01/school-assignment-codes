@@ -1,0 +1,20 @@
+**Mini_game**
+**just for fun :)**
+
+import random
+count=0
+number=random.randint(1,100)
+Tebak=input('Enter your number : ')
+while Tebak.isnumeric() :
+    count=count+1
+    if int(Tebak)<number:
+        print('Your number is too small, guess again! Guesses =',count)
+        Tebak=input('Enter your number : ')
+    elif int(Tebak)>number:
+        print('Your number is too big, guess again! Guesses   =',count)
+        Tebak=input('Enter your number : ')
+    else:
+        print('Good job! You guessed the number in',count,'attemps!')
+        break
+else :
+   print('Please input number not text/alphanumeric')
