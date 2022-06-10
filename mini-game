@@ -23,16 +23,16 @@ else :
 **you can change and make it better without my permission :)**
 
 print('Mini game')
-print('Made by chocolate_milk iwht contribution from Kenneth 8G')
+print('Made by choco_milk and Kenneth 8G for contribution')
 print()
-print('Please select level from 1 to 3')
+print('Please select level')
 print('Level 1 - Easy')
 print('Level 2 - Moderate')
 print('Level 3 - Hard')
 a=int(input('Type the level number - '))
 if a == 4 :
     print()
-    print('Did you type 4? Did ya? Sure, 1 to 1000000')
+    print('Extreme, 1 to 1000000')
     import random
     number=random.randint(1,1000000)
 elif a == 3 :
@@ -52,12 +52,12 @@ elif a == 1 :
     number=random.randint(1,100)
 elif a == 0 :
     print()
-    print('ಠ_ಠ')
+    print('Too easy, 1 to 10')
     import random
     number=random.randint(1,10)
 else :
     print()
-    print('Are you kidding me?')
+    print('No less than 0 and more than 4 also if you input number on the guess it will crash... so yeah')
     
 count=0
 b=input('Your guess: ')
@@ -65,10 +65,12 @@ while b.isnumeric() :
     count=count+1
     if int(b) < number :
         print('Your number is too small, guess again! Guesses =',count)
-        b=input('Enter your number : ')
+        print()
+        b=input('Enter your number: ')
     elif int(b) > number :
         print('Your number is too big, guess again! Guesses   =',count)
-        b=input('Enter your number : ')
+        print()
+        b=input('Enter your number: ')
     else:
         print('Good job! You guessed the number in',count,'attemps!')
         break
