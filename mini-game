@@ -18,3 +18,5 @@ while Tebak.isnumeric() :
         break
 else :
    print('Please input number not text/alphanumeric')
+
+**currently i'm making more advance mini game code for this with the help from my friend :)**
