@@ -62,8 +62,8 @@ else :
     
 count=0 #variable counter
 b=input('Your guess: ')
-while b.isnumeric() : #to indicate that the number you input is a number
-    count=count+1
+while b.isnumeric() : #to indicate that the number you input is a number #.isdigit() and .isnumeric are the same
+    count=+=1 #simplified count = count+1
     if int(b) < number :
         print('Your number is too small, guess again! Guesses =',count)
         print()
