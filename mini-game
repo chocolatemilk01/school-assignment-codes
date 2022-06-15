@@ -1,5 +1,4 @@
-**Mini_game**
-**just for fun :)**
+**base**
 
 import random
 count=0
@@ -19,8 +18,10 @@ while Tebak.isnumeric() :
 else :
    print('Please input number not text/alphanumeric')
 
-**not really WIP but stillneed a testing and beyond**
-**you can change and make it better without my permission :)**
+**advance**
+
+#a mini game
+#the engine is on the last part of the code :)
 
 print('Mini game')
 print('Made by choco_milk and Kenneth 8G for contribution')
@@ -33,8 +34,8 @@ a=int(input('Type the level number - '))
 if a == 4 :
     print()
     print('Extreme, 1 to 1000000')
-    import random
-    number=random.randint(1,1000000)
+    import random #make the comp generate a random number
+    number=random.randint(1,1000000) #select number randomly within the range inside it
 elif a == 3 :
     print()
     print('Level 3, 1 to 10000')
@@ -59,9 +60,9 @@ else :
     print()
     print('No less than 0 and more than 4 also if you input number on the guess it will crash... so yeah')
     
-count=0
+count=0 #variable counter
 b=input('Your guess: ')
-while b.isnumeric() :
+while b.isnumeric() : #to indicate that the number you input is a number
     count=count+1
     if int(b) < number :
         print('Your number is too small, guess again! Guesses =',count)
@@ -73,6 +74,6 @@ while b.isnumeric() :
         b=input('Enter your number: ')
     else:
         print('Good job! You guessed the number in',count,'attemps!')
-        break
+        break #to close
 else :
     print('No alphanumeric or alphabet')
