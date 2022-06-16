@@ -1,0 +1,3 @@
+Copy-paste and run it on https://www.onlinegdb.com/ (select Python 3 language)
+or...
+Download and install python run it on IDLE Python save it and run it with F5
