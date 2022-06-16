@@ -52,7 +52,8 @@ elif a == 0 :
     number=random.randint(1,10)
 else :
     print()
-    print('No less than 0 and more than 4 also if you input number on the guess it will crash... so yeah')
+    print('No less than 0 and more than 4')
+    quit()
     
 count=0 #variable counter
 b=input('Your guess: ')
@@ -73,7 +74,7 @@ while b.isnumeric() : #to indicate that the number you input is a number
 else :
     print('No alphanumeric or alphabet')
 ----------------------------------------------------------------------------------
-#more advance (WIP!)
+#more advance
 
 import random #make the comp generate a random number
 
@@ -89,32 +90,40 @@ if a == 4 :
     print()
     print('Extreme, 1 to 1000000')
     number=random.randint(1,1000000) #select number randomly within the range inside it
+    print(number)
 elif a == 3 :
     print()
     print('Level 3, 1 to 10000')
     number=random.randint(1,10000)
+    print(number)
 elif a == 2 :
     print()
     print('Level 2, 1 to 1000')
     number=random.randint(1,1000)
+    print(number)
 elif a == 1 :
     print()
     print('Level 1, 1 to 100')
     number=random.randint(1,100)
-else :
+    print(number)
+elif a == 0 :
     print()
     print('Too easy, 1 to 10')
     number=random.randint(1,10)
-    
+    print(number)
+else :
+    print('No more than 4 and less than 0')
+    quit()
+	
 count=0 #variable counter
 max=10 #variable counter for limiter
 b=input('Guess the number: ')
-while b != number :
+while b.isnumeric() and b != number :
     count+=1
     max-=1
-    if max > 0 and max <= 10 :
+    if max > 0 and max <= 11 :
         if int(b) < number :
-            print('Your number is too small! Guess again. Guesse: ',count)
+            print('Your number is too small! Guess again. Guesses: ',count)
             print('Attempt limits: ',max)
             print()
             b=input('Guess the number: ')
@@ -128,8 +137,8 @@ while b != number :
             print('Attempt limits: ',max)
             break #to close
     else :
-        print('Yo\ve reached the limit!')
+        print('You\'ve reached the limit!')
         break #close due to limit
-    #note, can't use 'break' outside while/for
+        #note, can't use 'break' outside while/for
 else :
     print('No alphabet or alphanumeric')
