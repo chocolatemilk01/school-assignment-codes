@@ -73,7 +73,7 @@ while b.isnumeric() : #to indicate that the number you input is a number
 else :
     print('No alphanumeric or alphabet')
 ----------------------------------------------------------------------------------
-#more advance
+#more advance (WIP!)
 
 import random #make the comp generate a random number
 
