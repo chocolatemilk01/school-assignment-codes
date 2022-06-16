@@ -20,9 +20,6 @@ else :
 
 #advance
 
-#a mini game
-#the engine is on the last part of the code :)
-
 import random #make the comp generate a random number
 
 print('Mini game')
