@@ -127,6 +127,7 @@ while b != number :
             b=input('Guess the number: ')
         else :
             print('You guessed the number in',count,'attempts!')
+            print('Attempt limits: ',max)
             break #to close
     elif b.isalpha() and b.isalphanumeric() :
         print('No alphabet or alphanumeric')
