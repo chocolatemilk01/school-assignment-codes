@@ -101,12 +101,10 @@ elif a == 1 :
     print()
     print('Level 1, 1 to 100')
     number=random.randint(1,100)
-elif a == 0 :
+else :
     print()
     print('Too easy, 1 to 10')
     number=random.randint(1,10)
-else :
-    print('No alphabet/alphanumeric/more than 0 and 4')
     
 count=0 #variable counter
 max=10 #variable counter for limiter
