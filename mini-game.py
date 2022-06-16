@@ -1,4 +1,4 @@
-#base
+#simple
 
 import random
 count=0
@@ -17,7 +17,7 @@ while Tebak.isnumeric() :
         break
 else :
    print('Please input number not text/alphanumeric')
-
+----------------------------------------------------------------------------------
 #advance
 
 import random #make the comp generate a random number
@@ -72,7 +72,6 @@ while b.isnumeric() : #to indicate that the number you input is a number
         break #to close
 else :
     print('No alphanumeric or alphabet')
-
 ----------------------------------------------------------------------------------
 #more advance
 
