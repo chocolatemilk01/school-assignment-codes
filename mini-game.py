@@ -1,4 +1,4 @@
-**base**
+#base
 
 import random
 count=0
@@ -18,7 +18,7 @@ while Tebak.isnumeric() :
 else :
    print('Please input number not text/alphanumeric')
 
-**advance**
+#advance
 
 #a mini game
 #the engine is on the last part of the code :)
