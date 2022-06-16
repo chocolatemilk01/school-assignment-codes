@@ -129,9 +129,6 @@ while b != number :
             print('You guessed the number in',count,'attempts!')
             print('Attempt limits: ',max)
             break #to close
-    elif b.isalpha() and b.isalphanumeric() :
-        print('No alphabet or alphanumeric')
-        break #stop it from repeating randomly
     else :
         print('Yo\ve reached the limit!')
         break #close due to limit
