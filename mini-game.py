@@ -79,7 +79,7 @@ else :
 import random #make the comp generate a random number
 
 print('Mini game')
-print('Made by choco_milk and Nasikuning46 for contribution')
+print('Made by Ray 8F and Kenneth 8G for contribution')
 print()
 print('Please select level')
 print('Level 1 - Easy')
@@ -90,38 +90,37 @@ if a == 4 :
     print()
     print('Extreme, 1 to 1000000')
     number=random.randint(1,1000000) #select number randomly within the range inside it
-    print(number)
+    max=25 #variable counter for limiter
 elif a == 3 :
     print()
     print('Level 3, 1 to 10000')
     number=random.randint(1,10000)
-    print(number)
+    max=20
 elif a == 2 :
     print()
     print('Level 2, 1 to 1000')
     number=random.randint(1,1000)
-    print(number)
+    max=15
 elif a == 1 :
     print()
     print('Level 1, 1 to 100')
     number=random.randint(1,100)
-    print(number)
+    max=10
 elif a == 0 :
     print()
     print('Too easy, 1 to 10')
     number=random.randint(1,10)
-    print(number)
+    max=10
 else :
     print('No more than 4 and less than 0')
     quit()
 	
 count=0 #variable counter
-max=10 #variable counter for limiter
 b=input('Guess the number: ')
 while b.isnumeric() and b != number :
     count+=1
     max-=1
-    if max > 0 and max <= 11 :
+    if max > 0 and max <= 11 or max <= 16 or max <= 21 or max <= 26 :
         if int(b) < number :
             print('Your number is too small! Guess again. Guesses: ',count)
             print('Attempt limits: ',max)
