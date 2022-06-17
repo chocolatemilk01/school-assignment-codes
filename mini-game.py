@@ -23,7 +23,7 @@ else :
 import random #make the comp generate a random number
 
 print('Mini game')
-print('Made by choco_milk and Kenneth 8G for contribution')
+print('Made by choco_milk and Nasikuning46 for contribution')
 print()
 print('Please select level')
 print('Level 1 - Easy')
@@ -79,7 +79,7 @@ else :
 import random #make the comp generate a random number
 
 print('Mini game')
-print('Made by choco_milk and Kenneth 8G for contribution')
+print('Made by choco_milk and Nasikuning46 for contribution')
 print()
 print('Please select level')
 print('Level 1 - Easy')
