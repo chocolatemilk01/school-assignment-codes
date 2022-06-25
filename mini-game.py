@@ -32,16 +32,16 @@ print('Level 3 - Hard')
 a=int(input('Type the level number - '))
 if a == 4 :
     print()
-    print('Extreme, 1 to 1000000')
-    number=random.randint(1,1000000) #select number randomly within the range inside it
+    print('Extreme, 1 to 1.000.000')
+    number=random.randint(1,1_000_000) #select number randomly within the range inside it
 elif a == 3 :
     print()
-    print('Level 3, 1 to 10000')
-    number=random.randint(1,10000)
+    print('Level 3, 1 to 10.000')
+    number=random.randint(1,10_000)
 elif a == 2 :
     print()
-    print('Level 2, 1 to 1000')
-    number=random.randint(1,1000)
+    print('Level 2, 1 to 1.000')
+    number=random.randint(1,1_000)
 elif a == 1 :
     print()
     print('Level 1, 1 to 100')
@@ -88,18 +88,18 @@ print('Level 3 - Hard')
 a=int(input('Type the level number - '))
 if a == 4 :
     print()
-    print('Extreme, 1 to 1000000')
-    number=random.randint(1,1000000) #select number randomly within the range inside it
+    print('Extreme, 1 to 1.000.000')
+    number=random.randint(1,1_000_000) #select number randomly within the range inside it
     max=25 #variable counter for limiter
 elif a == 3 :
     print()
-    print('Level 3, 1 to 10000')
-    number=random.randint(1,10000)
+    print('Level 3, 1 to 10.000')
+    number=random.randint(1,10_000)
     max=20
 elif a == 2 :
     print()
-    print('Level 2, 1 to 1000')
-    number=random.randint(1,1000)
+    print('Level 2, 1 to 1.000')
+    number=random.randint(1,1_000)
     max=15
 elif a == 1 :
     print()
